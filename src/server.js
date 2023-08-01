@@ -13,7 +13,7 @@ connection();
 
 app.use(bodyParser.json());
 app.use(cors());
-
+app.use("/img", express.static("public/images"));
 app.get("/crew/:name", getCrew);
 app.get("/destination/:name", getDestination);
 app.get("/technology/:name", getTech);
