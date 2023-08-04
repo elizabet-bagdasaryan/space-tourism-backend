@@ -9,12 +9,13 @@ This application serves as the backend API for the Space Tourism application, ha
 The API endpoint for retrieving space travel information is as follows:
 
 GET /crew/:name
+
 GET /destination/:name
+
 GET /technology/:name
 
 
 `:name`: Represents the topic we want to view information about on the specific page
-
 
 
 ## How it Works
