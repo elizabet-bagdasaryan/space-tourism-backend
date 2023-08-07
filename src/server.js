@@ -7,7 +7,10 @@ import getCrew from "./controllers/crewController.js";
 import getDestination from "./controllers/destinationControlller.js";
 import getTech from "./controllers/techController.js";
 import swaggerMiddleware from "./middleware/swagger-middleware.js";
+import cors from 'cors'
+
 const app = express();
+app.use(cors());
 dotenv.config();
 connection();
 
