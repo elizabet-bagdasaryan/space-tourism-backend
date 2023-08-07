@@ -1,0 +1,43 @@
+openapi: 3.0.0
+info:
+  title: SpaceTourism
+  description: Space Tourism API
+  version: 1.0.0
+
+servers:
+  - url: http://localhost:3000/api
+    description: local server
+paths:
+  /destination/{name}:
+    get:
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Data retrieved successfully
+  /crew/{name}:
+    get:
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Data retrieved successfully
+  /technology/{name}:
+    get:
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Data retrieved successfully
