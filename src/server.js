@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import { connection } from "./database/mongo.js";
+import { connection } from "./config/mongo.js";
 import dotenv from "dotenv";
 import bodyParser from "body-parser";
 import getCrew from "./controllers/crewController.js";
