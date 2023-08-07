@@ -5,6 +5,8 @@ info:
   version: 1.0.0
 
 servers:
+  - url: https://space-tourism-backend-production.up.railway.app/
+    description: server
   - url: http://localhost:3000
     description: local server
   
