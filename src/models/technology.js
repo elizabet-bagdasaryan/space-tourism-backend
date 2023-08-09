@@ -21,8 +21,8 @@ const technology = new Schema({
   },
 });
 
-const technologyData = model("technology", technology);
+const TechnologyData = model("technology", technology);
 
-export default technologyData;
+export default TechnologyData;
 
 

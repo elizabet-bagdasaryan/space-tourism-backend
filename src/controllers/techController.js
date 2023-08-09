@@ -1,9 +1,9 @@
-import techData from "../models/technology.js";
+import TechData from "../models/technology.js";
 
 const getTech = async (req, res) => {
   try {
     const { name } = req.params;
-    const technology = await techData.findOne({ name });
+    const technology = await TechData.findOne({ name });
     res
       .status(200)
       .json({ message: "Data retrieved successfully", technology });

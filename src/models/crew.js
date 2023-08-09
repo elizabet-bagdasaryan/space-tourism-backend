@@ -25,6 +25,6 @@ const crew = new Schema({
   },
 });
 
-const crewData = model("crew", crew);
+const CrewData = model("crew", crew);
 
-export default crewData;
+export default CrewData;

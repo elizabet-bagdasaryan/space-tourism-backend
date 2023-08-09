@@ -29,6 +29,6 @@ const destination = new Schema({
   },
 });
 
-const destinationData = model("destination", destination);
+const DestinationData = model("destination", destination);
 
-export default destinationData;
+export default DestinationData;
