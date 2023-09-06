@@ -8,7 +8,6 @@ import getDestination from "./controllers/destinationControlller.js";
 import getTech from "./controllers/techController.js";
 import swaggerMiddleware from "./middleware/swagger-middleware.js";
 
-
 const app = express();
 
 dotenv.config();
@@ -21,8 +20,7 @@ app.get("/crew/:name", getCrew);
 app.get("/destination/:name", getDestination);
 app.get("/technology/:name", getTech);
 
-
 app.use("/", ...swaggerMiddleware());
 app.listen(process.env.PORT || 3000, () => {
-  console.log("Server is listening on port 3000");
+	console.log("Server is listening on port 3000");
 });

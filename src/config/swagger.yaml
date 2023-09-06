@@ -9,7 +9,7 @@ servers:
     description: server
   - url: http://localhost:3000
     description: local server
-  
+
 paths:
   /destination/{name}:
     get:
